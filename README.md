@@ -11,7 +11,7 @@ Main Screen
 
 Account Page
 
-![Alt text](/images/AccountPage1.png?raw=true "Optional Title")
+![Alt text](/images/AccountPage.png?raw=true "Optional Title")
 
 ![Alt text](/images/AccountPage2.png?raw=true "Optional Title")
 
