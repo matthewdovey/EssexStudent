@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_account"
+        tools:context=".AccountActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountInfo">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Details"
+            android:id="@+id/accountDetails"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginLeft="20dp"
+            android:singleLine="false" />
+
+            <TextView
+                android:layout_width="900dp"
+                android:layout_height="2dp"
+                android:background="@drawable/seperator_gradient"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/separator"
+                android:layout_below="@+id/accountDetails"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Full Name:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:background="#255255"
+                android:id="@+id/name"
+                android:layout_below="@+id/separator"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:id="@+id/userName"
+                android:text="Matthew Dovey"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:background="@drawable/thin_blue_border"
+                android:layout_toRightOf="@+id/name"
+                android:layout_below="@+id/separator"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Email:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/email"
+                android:layout_below="@+id/name" />
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="*email*"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userEmail"
+                android:layout_toRightOf="@id/email"
+                android:layout_below="@+id/name" />
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Reg Number:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/regNum"
+                android:layout_below="@+id/email" />
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="1403164"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:background="@drawable/thin_blue_border"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/regNum"
+                android:id="@+id/userReg"
+                android:layout_below="@+id/email" />
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Course:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/course"
+                android:layout_below="@+id/regNum"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="Computer Science"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userCourse"
+                android:layout_toRightOf="@id/course"
+                android:layout_below="@+id/regNum"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="DOB:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/DOB"
+                android:layout_below="@+id/course"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="19/02/1996"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userDOB"
+                android:layout_toRightOf="@id/DOB"
+                android:layout_below="@+id/course"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Mobile:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/mobile"
+                android:layout_below="@+id/DOB"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="*mobile*"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userMobile"
+                android:layout_toRightOf="@id/mobile"
+                android:layout_below="@+id/DOB"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Address Line 1:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/addressTitle1"
+                android:layout_below="@+id/mobile"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="COL-AW-H-F0-03-D-A"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userAddress1"
+                android:layout_toRightOf="@id/addressTitle1"
+                android:layout_below="@+id/mobile"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Address Line 2:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/addressTitle2"
+                android:layout_below="@+id/addressTitle1"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="AVON WAY"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userAddress2"
+                android:layout_toRightOf="@id/addressTitle2"
+                android:layout_below="@+id/addressTitle1"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="City/Town:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/cityTitle"
+                android:layout_below="@+id/addressTitle2"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="COLCHESTER"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userCity"
+                android:layout_toRightOf="@id/cityTitle"
+                android:layout_below="@+id/addressTitle2"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="County:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/countyTitle"
+                android:layout_below="@+id/cityTitle"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="ESSEX"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userCounty"
+                android:layout_toRightOf="@id/countyTitle"
+                android:layout_below="@+id/cityTitle"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_title"
+                android:layout_height="20dp"
+                android:text="Postcode:"
+                android:paddingLeft="@dimen/account_details_title_padding"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#255255"
+                android:id="@+id/postcodeTitle"
+                android:layout_below="@+id/countyTitle"/>
+
+            <TextView
+                android:layout_width="@dimen/account_details_user"
+                android:layout_height="20dp"
+                android:text="CO4 3TZ"
+                android:paddingLeft="@dimen/account_details_user_padding"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thin_blue_border"
+                android:id="@+id/userPostcode"
+                android:layout_toRightOf="@id/postcodeTitle"
+                android:layout_below="@+id/countyTitle"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/memberships"
+            android:layout_below="@id/accountInfo"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memberships"
+                android:id="@+id/membershipTitle"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="900dp"
+                android:layout_height="2dp"
+                android:background="@drawable/seperator_gradient"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/separator2"
+                android:layout_below="@+id/membershipTitle"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/separator2"
+                android:id="@+id/membershipIcon1"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_membership"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:text="Course Rep"
+                android:gravity="center"
+                android:layout_below="@id/separator2"
+                android:layout_toRightOf="@id/membershipIcon1" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/history"
+            android:layout_below="@id/memberships"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase History"
+                android:id="@+id/purchaseHistoryTitle"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="900dp"
+                android:layout_height="2dp"
+                android:background="@drawable/seperator_gradient"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/separator3"
+                android:layout_below="@+id/purchaseHistoryTitle"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/purchaseHistory"
+            android:background="@drawable/full_blue_border"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/history">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Website - 13 Nov 2015 22:27"
+                android:textSize="11dp"
+                android:id="@+id/purchaseDate1" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ref: #123456789"
+                android:id="@+id/purchaseRef1"
+                android:textSize="11dp"
+                android:layout_toRightOf="@id/purchaseDate1" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Product:"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/purchaseDate1"
+                android:textSize="11dp"
+                android:id="@+id/purchaseTitle1" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Qty:"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/purchaseDate1"
+                android:layout_toRightOf="@id/purchaseTitle1"
+                android:textSize="11dp"
+                android:id="@+id/purchaseQty1" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:layout_toRightOf="@id/purchaseQty1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/purchaseDate1"
+                android:textSize="11dp"
+                android:id="@+id/purchasePrice1" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:layout_toRightOf="@id/purchasePrice1"
+                android:layout_below="@id/purchaseDate1"
+                android:layout_marginTop="10dp"
+                android:textSize="11dp"
+                android:id="@+id/purchaseTotal1" />
+
+            <TextView
+                android:layout_width="285dp"
+                android:layout_height="1dp"
+                android:background="#191919"
+                android:layout_below="@id/purchaseTitle1"
+                android:id="@+id/historySeperator"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Bounce Fri 13 Nov 2015 - Advance Student"
+                android:layout_below="@id/historySeperator"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:id="@+id/productTitle" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_below="@id/historySeperator"
+                android:layout_toRightOf="@id/productTitle"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:id="@+id/productQty" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="£4.00"
+                android:layout_below="@id/historySeperator"
+                android:layout_toRightOf="@id/productQty"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:id="@+id/productPrice" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="£4.00"
+                android:layout_below="@id/historySeperator"
+                android:layout_toRightOf="@id/productPrice"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:id="@+id/productTotal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
